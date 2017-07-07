@@ -1,0 +1,129 @@
+h2{
+	font-family: arial helvetica sans-serif;
+}
+.header{
+	text-align: center;
+	color: #311759;
+	width: 1100px;
+	margin: 0 auto;
+	margin-top: 120px;
+}
+.header h1{
+	line-height: 68px;
+	font-size: 54px;
+}
+.header h2{
+	font-weight: normal;
+	letter-spacing: 6px;
+	font-size: 18px;
+	line-height: 38px;
+}
+.header img{
+	margin-top: 15px;
+}
+.content_wrap{
+	width: 1100px;
+	margin: 0 auto;
+}
+.list_title{
+	color: #311759;
+	font-size: 30px;
+	height: 60px;
+	position: relative;
+	background: url(../img/pen_line_long.png) 0 58px no-repeat;
+}
+.list_title .pen{
+	width: 61px;
+	height: 58px;
+	position: absolute;
+	right: 0;
+	bottom: -5px;
+	cursor: pointer;
+	background: url(../img/pen.png) 0 0 no-repeat;
+}
+.list_title .pen:hover{
+	background: url(../img/pen_hover.png) 0 0 no-repeat;
+}
+.list_content{
+	padding-top: 40px;
+	width: 1130px;
+}
+.go_more{
+	margin: 30px auto 0;
+	display: block;
+}
+.list_more{
+	height: 58px;
+	width: 58px;
+	margin: 15px auto 130px;
+	background: url(../img/lis_more_btn_bg.png) 0 -58px no-repeat;
+	cursor: pointer;
+}
+.list_more:hover{
+	background-position: 0 0;
+    transition: all 0.3s ease 0s;
+}
+.list_item{
+	float: left;
+	width: 513px;
+	height: 202px;
+	background: #fff;
+	padding: 36px 0 0 20px;
+	border: 1px solid #fff;
+	cursor: pointer;
+	position: relative;
+}
+.list_item:hover{
+	border-color: #86759e;
+	transform: translateY(-6px);
+	transition: all .3s ease 0s;
+}
+.list_item>div{
+	float: left;
+}
+.img_wrap>img{
+	width: 100%;
+	height: 100%;
+}
+.img_wrap{
+	height: 168px;
+	width: 260px;
+	overflow: hidden;
+	margin-right: 17px;
+}
+.content_text{
+	width: 221px;
+}
+.title_small{
+	font-size: 20px;
+	color: #454548;
+	line-height: 26px;
+	max-height: 53px;
+	overflow: hidden;
+	padding-top: 15px;
+}
+.date{
+	color: #6b6a6f;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 2px;
+}
+.list_item p{
+	padding-top: 12px;
+	color: #47464a;
+	line-height: 25px;
+	max-height: 75px;
+	overflow: hidden;
+	letter-spacing: 0;
+}
+.list_img_over_xiaojiantou{
+	position: absolute;
+	left: 0;
+	top: 36px;
+}
+.list_item:hover .list_img_over_xiaojiantou{
+	transition: all .3s ease 0s;
+	top: 36px;
+	left: 50px;
+	
+}

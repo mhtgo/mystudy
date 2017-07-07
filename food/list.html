@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/listData.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<h1>特色菜品</h1>
+			<h2>Special Food</h2>
+			<img src="img/three_points01.png"/>
+		</div>
+		<div class="content_wrap">
+			<h1 class="list_title">
+				列表
+				<span class="pen"></span>
+			</h1>
+			<div class="list_content clearfix" id="articleList">
+				
+			</div>
+			<img class="go_more" src="img/list_gomore_bg.jpg" alt="" />
+			<div class="list_more" id="listMore"></div>
+		</div>
+		
+		<div id="itemHtml" style="display: none;">
+				<div class="list_item" articleid="$articleList$">
+					<div class="img_wrap">
+						<img src="$articleCove$"/>
+					</div>
+					<div class="content_text">
+						<div class="title_small">$aricleTitle$</div>
+						<div class="date">$articleDatetime$</div>
+						<p>$description$</p>
+					</div>
+					<img class="list_img_over_xiaojiantou" src="img/list_img_over_xiaojiantou.png" alt="" />
+				</div>
+		</div>
+	</body>
+</html>
