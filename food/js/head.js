@@ -14,6 +14,6 @@ $(function() {
 	})
 	$('.xiala_1').find("li").click(function() {
 		console.log($(this).index())
-		window.open("cuisine.html?thisid=" + $(this).index())
+		window.open("xiao.html?thisid=" + $(this).index())
 	})
 });

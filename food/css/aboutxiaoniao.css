@@ -48,11 +48,9 @@
 	color: #FF7F27;	
 }
 
-video{
+.genghuan{
 	width: 100%;
-	height: auto;
-	position: absolute;
-	
+	height: auto;	
 }
 .special_dishes>video{
 	z-index: -1;
@@ -70,7 +68,7 @@ video{
 }
 .welcome_text_container{
 	text-align: center;
-	color: #fff;
+	color: black;
 	display: ;
 	position: absolute;
 	top: 100%;
