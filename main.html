@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.css" />
+		<style>
+			#text>.t_1:first-child{
+				z-index: 10;
+				background: #F1F2F6;
+			}
+		</style>
+	</head>
+
+	<body ng-controller="myCtrl">
+		<div id="head"></div>
+
+		<div class="lubo">
+			<div class="lun_1 lu">
+				<img src="images/1497700818_252961.png" class="animated fadeInDown" />
+			</div>
+
+			<div class="lun_2 lu">
+				<img src="images/1497701871_259978.png" class="animated fadeInLeft" />
+			</div>
+
+			<div class="lun_3 lu">
+				<img src="images/1497703001_289285.png" class="animated bounceInUp" />
+			</div>
+			<div class="nav1">
+				<div class="xiao"></div>
+				<div class="xiao"></div>
+				<div class="xiao"></div>
+			</div>
+		</div>
+
+		<div class="middle">
+			<img src="images/goOn_icon01.png" />
+			<h1 class="title">主力美食</h1>
+			<h2 class="title">delicious</h2>
+
+			<div class="lunbo2">
+
+				<div class="line">
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+					<div class="linebtn_one"><i class="bian"></i><span></span></div>
+				</div>
+
+				<div id="text">
+					<div class="t_1"  ng-repeat="obj in list">
+						<div class="t_1_left">
+							<img src="images/s4174647_149664257467418.jpg" />
+						</div>
+						<div class="t_1_right">
+							<h1>{{obj.name}}<span class="pen"></span></h1>
+							<div class="t_1_1">
+								<div class="p1">
+									<h2>概述</h2>
+									<p>&nbsp;&nbsp;{{obj.des}}</p>
+								</div>
+								<div class="p2">
+									<h2>烹饪技巧</h2>
+									<p>1、{{obj.skill[0]}}</p>
+									<p>2、{{obj.skill[1]}}</p>
+									<p>3、{{obj.skill[2]}}</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="change_line">
+					<span class="prev1"></span>
+					<span class="next1"></span>
+				</div>
+			</div>
+		</div>
+
+		<div class="middle_2">
+			<div class="middle_2_1">
+				<div class="t_1_right">
+					<h2>美食</h2>
+					<br />
+					<p class="qu">&nbsp;&nbsp;美食，顾名思义就是美味的食物，贵的有山珍海味，便宜的有街边小吃。其实美食是不分贵贱的，只要是自己喜欢的，都可以称之为美食。中国素有”烹饪王国“这个美誉。在中国这个大家庭里，我们有五十六个小家庭，每个家庭都有自己的特色美食。美食吃前有期待、吃后有回味，已不仅仅是简单的味觉感受，更是一种精神享受。享受美食也要看场合，场合好美食起来也有味道。世界各地美食文化博大精深，营养物质各不相同，品味更多美食，享受更多健康，也让人吃的更加开心。</p>
+					<br />
+				</div>
+				<div class="tup">
+					<img src="images/6f061d950a7b0208c11b626862d9f2d3562cc86d.jpg" />
+					<img src="images/8694a4c27d1ed21b651b736cad6eddc450da3f6c.jpg" />
+					<img src="images/b219ebc4b74543a914c9a7451e178a82b801146c.jpg" />
+					<img src="images/bf096b63f6246b60ecdceffdebf81a4c500fa26d.jpg" />
+					<img src="images/timg (1).jpg" />
+					<img src="images/timg (2).jpg" />
+					<img src="images/timg (3).jpg" />
+					<img src="images/u=2421556109,1826139302&fm=26&gp=0.jpg" />
+				</div>
+			</div>
+		</div>
+		<div id="yewu">
+			<h1 class="tou_1">环球美食</h1>
+			<h2 class="tou_2">Global Cuisine</h2>
+			<div class="box1">
+				<ul>
+					<p class="d2">
+						<span class="zuo">01</span>
+						<span class="zuo_1">
+		            		<span class="ling">
+		            			法国鹅肝
+		            		</span><br />
+						</span>
+						<a class="close cc"></a>
+						<b class="zhong"><img src="images/business_cimg01.png"/></b>
+
+					</p>
+					<li style="display:block" class="daun">
+						<p>&nbsp;&nbsp;制作方法作一简单介绍：将鹅肝（约1300克）表面的皮膜除尽，剖开鹅肝并取出血管，撒上盐（12克）、胡椒粉（适量）、糖（4克）、豆蔻粉（适量），约半小时后再淋上白兰地酒（一大汤匙），待腌渍约2小时后，放入烤盘内，入烤箱烘烤（烤箱内温度控制在140左右）约 1小时后取，在烤盘上再置一空烤盘，上加重物，将鹅肝酱由上而下压平，待冷却后放入冰箱冷冻，食用时切片即成。</p>
+
+					</li>
+					<p class="d2">
+						<span class="zuo1">02</span>
+						<span class="zuo_1">
+		            		<span class="ling">
+		            			澳洲龙虾
+		            		</span><br />
+						</span>
+						<a class="close cc"></a>
+						<b class="zhong"><img src="images/business_cimg02.png"/></b>
+
+					</p>
+					<li class="daun">
+						<p class="ding">&nbsp;&nbsp;将150克面粉与鸭蛋和匀，制成全蛋面：将龙虾宰杀、洗净，切成3厘米方块，拍生粉，入油锅炸熟待用；把全蛋面煮熟切成面条待用，培根切小粒炸脆；锅内下黄油、芝士片、鲜牛奶、面粉酱烧开，用盐、味精调味，制成芝士酱；用芝士酱把煮熟的面条加入炸好的培根粒拌匀，垫在盘底；面条上面摆上炸好的龙虾块，上浇芝士酱，撒上碎芝士条；入280℃烤箱烤15分钟取出，上桌即可。
+						</p>
+					</li>
+					<p class="d2">
+						<span class="zuo11">03</span>
+						<span class="zuo_1">
+		            		<span class="ling">
+		            			巴西烤肉
+		            		</span><br />
+						</span>
+						<a class="close cc"></a>
+						<b class="zhong"><img src="images/business_cimg03.png"/></b>
+					</p>
+					<li class="daun">
+						<p class="ding">&nbsp;&nbsp;巴西的烤肉主要有烤牛肉，鸡腿，猪肉，香肠甚至菠萝，梨和苹果(菠萝是表面涂上巴西蜂蜜进行烘烤）,它是把这些原料腌味后分别串在一个长约一米带凹槽的扁平铁棍上放在碳火上慢慢烧烤，期间要刷几次油，烤至两面金黄，肉香扑鼻的时候，就可以食用了。
+
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--团队-->
+		<div class="tuandui">
+
+			<h1 style="margin-top:10px; line-height:60px;">顶级大厨</h1>
+			<h2>Our Chef</h2>
+
+			<div class="why">
+				<div class="teammove_wrap">
+					<div class="team_move">
+						<div class="twoteam_wrap animated zoomInLeft" ng-repeat="x in list1">
+							<div class="team_box" ng-repeat="y in x">
+								<div class="headimg"><img src="images/team_img03.png" />
+									<a href="javascript:;"></a>
+								</div>
+								<div class="name_wrap">
+									<div class="name">{{y.name}}</div>
+									<div class="job_title">{{y.des}}</div>
+								</div>
+								<div class="description">{{y.skill}}</div>
+								<div class="send_email">
+									<a href="javascript:;"><i class="icon"></i><span>发送邮件</span></a>
+								</div>
+								<div class="other_contacts">
+									<div class="weibo" title="微博"></div>
+									<div class="qq" title="QQ"></div>
+									<div class="github" title="github"></div>
+									<div class="weixin" title="微信"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+				<div class="ffffff">
+					<span class="prev1"></span>
+					<div class="middle_points1">
+						<div class="middle_wrap1">
+							<div class="middle1">
+								<span class="now"></span>
+								<span></span>
+								<span class="last1"></span>
+							</div>
+						</div>
+					</div>
+					<span class="next1"></span>
+				</div>
+
+			</div>
+		</div>
+		<!--联系我们-->
+		<div class="mokuai1 lianxi">
+			<h1 style="margin-top:50px; line-height:60px;">联系我们</h1>
+			<h2>Contact Us</h2>
+
+			<div class="input_wrap">
+				<form>
+					<div class="input_box"><i class="icon"></i><input type="text" placeholder="*名字" /></div>
+					<div class="input_box"><i class="icon" style="background-position:-31px 14px"></i><input type="text" placeholder="*邮箱" /></div>
+					<div class="input_box"><i class="icon" style="background-position:-79px 14px"></i><input type="text" placeholder="联系电话" /></div>
+					<div class="input_box textarea_box"><i class="icon" style="background-position:-128px 14px"></i><textarea placeholder="*说点儿什么吧"></textarea></div>
+					<div class="shuomin">亲，留言的时候，要请留下你的姓名和联系方式哦~</div>
+					<div class="shuomin2">谢谢你的留言，我们将及时回复！</div>
+					<div class="input_box sentbtn_box"><i class="icon"></i><span>发送留言</span></div>
+				</form>
+			</div>
+
+			<div class="lianxi_ways">
+				<div class="way_one">
+					<img src="images/lianxi_icon01.png" />
+					<div class="way_content">
+						<h1>地址</h1>
+						<p>北京市昌平区站前东街2号</p>
+						<p>回龙观田园风光综合商业楼3层</p>
+						<p>邮编：100081</p>
+					</div>
+				</div>
+				<div class="way_one" style="margin:0 32px;">
+					<img src="images/lianxi_icon02.png" />
+					<div class="way_content">
+						<h1>电话</h1>
+						<p style="margin-top:40px;">总机：010-8888888</p>
+					</div>
+				</div>
+				<div class="way_one">
+					<img src="images/lianxi_icon03.png" />
+					<div class="way_content">
+						<h1>网络途径</h1>
+						<p>邮箱：edu@zbj.com</p>
+						<p>微博：aaaaaaa_sina</p>
+						<p>微信：ccccccc_weixin</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<!--地图-->
+		<div class="themap_wrap">
+			<div class="map_topimg">
+				<img src="images/map_topimg.png"/>
+			</div>
+			<div id="map">
+			
+				
+			</div>
+			<!--<div class="map_bottomimg"></div>-->
+		</div>
+		<!--音乐-->
+		 <div id="footer"></div> 
+		<!--返回顶部-->
+		<div class="scrollTop_wrap fanhui">
+			<div class="scroll_top scrollTop"></div>
+			<div class="fixed_contactus"></div>
+		</div>
+		<script src="data/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="data/cook.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=tqBvLZRYy11Gwer8GpUT5Wh6eS5pIxwN"></script>
+	</body>
+
+</html>
+<script type="text/javascript">
+	var map = new BMap.Map("map");
+	var point = new BMap.Point(116.331398,39.897445);
+	map.centerAndZoom(point,12);
+	var geolocation = new BMap.Geolocation();
+	geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			var mk = new BMap.Marker(r.point);
+			map.addOverlay(mk);
+			map.panTo(r.point);
+		}
+	},{enableHighAccuracy: true})
+	$("#head").load("head.html");
+	$("#footer").load("footer.html");
+</script>

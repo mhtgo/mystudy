@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div class="footer_wrap">
+			<div class="footer">
+				<div class="music">
+					<span class="duo"></span>
+					<span class="lai"></span>
+					<span class="mi"></span>
+					<span class="fa"></span>
+					<span class="suo"></span>
+					<span class="la"></span>
+					<span class="xi"></span>
+				</div>
+				<div id="beiaishenmin" class="shenmin">
+					蜀ICP备16002451号
+				</div>
+				
+				<div id="music_content">
+					<audio src="music/sound00.mp3"></audio>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$('.music>span').click(function(){
+		var index = $(this).index();
+		
+		var $music = $("<audio src='music/sound0"+index+".mp3' autoplay hidden></audio>");
+		
+		$music.appendTo($("#music_content"));
+		setTimeout(function(){
+			$music.remove();
+		},2000);
+		
+		
+	})
+	
+	
+
+</script>
