@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="kaifanla">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-animate.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="parentCtrl" >
+		<div  ng-include="'tpl/input/head.html'"></div>
+		<div id="" ng-view  class="page">
+			
+		</div>
+		<div ng-include="'tpl/input/foot.html'"></div>
+	</body>
+</html>

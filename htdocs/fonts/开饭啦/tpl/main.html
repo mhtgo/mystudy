@@ -1,0 +1,31 @@
+<div ng-include="'tpl/input/head.html'"></div>
+
+	<div class="container">
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="搜索" />
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>				
+			</div>
+			
+		<ul class="list-group ">
+			
+			  <li class="list-group-item media" ng-repeat="menue in menuelist track by $index">
+			  	<a href="#/detail">
+			  	<div class="media-left media-middle">
+				      <img class="media-object" ng-src="img/{{menue.img_sm}}" alt="...">			    
+				</div>
+				<div class="media-body">
+				    <h4 >{{menue.name}}</h4>
+				   <p>{{menue.material}}}</p>
+				   <hr />
+				   <p>￥{{menue.price}}</p>
+				</div>
+				</a>
+			  </li>
+			
+		 
+		  <button type="button"  class="btn btn-success btn-block" style="margin-top: 20px;">加载更多</button>
+		</ul>
+	</div>
+	
+<div ng-include="'tpl/input/foot.html'"></div>
+

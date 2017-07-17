@@ -1,0 +1,26 @@
+
+<div class="container">
+	<div class="">
+		<h2 class="text-center">我的订单</h2>
+		<table class="table table-striped table-bordered table-responsive fo">
+			<thead>
+				<tr>
+					<td>编号</td>
+					<td>菜品</td>
+					<td>下单时间</td>
+					<td>联系人</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-click="jump('/detail/'+myOrder.did)" ng-repeat="myOrder in myOrders">
+					<td>{{myOrder.did}}</td>
+					<td><img ng-src="img/{{myOrder.img_sm}}"/></td>
+					<td>{{myOrder.order_time|date:"yyyy-MM-dd HH:mm:ss" }}</td>
+					<td>{{myOrder.user_name}}</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
+</div>
+

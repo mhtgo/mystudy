@@ -1,0 +1,37 @@
+
+<div class="container order">
+	
+	<div class="alert alert-warning order" >
+		<p ng-model="msgbox" ng-show="msgbox">{{msgbox}}</p>
+    <p ng-model="errBox" ng-show="errBox">{{errBox}}</p>
+	<form ng-hide="errBox||msgbox">
+		<div class="form-group">
+			<label for="name">联系人：</label>
+			<input type="text"  id="name" class="form-control" ng-model="orderList.user_name" />
+		</div>
+		<div class="form-group">
+			<div class="">
+				<label>性别</label>
+			</div>
+				<div class="radio-inline">
+					<input type="radio" name="sex" id="" value="1" ng-model="orderList.sex" />男
+				</div>
+				<div class="radio-inline">
+					<input type="radio" name="sex" id="" value="2" ng-model="orderList.sex"/>女
+				</div>
+				
+			
+		</div>
+		<div class="form-group">
+			<label for="phone">联系电话：</label>
+			<input type="text"  id="phone" class="form-control" ng-model="orderList.phone"/>
+		</div>
+		<div class="form-group">
+			<label for="address">送餐地址：</label>
+			<input type="text"  id="address" class="form-control" ng-model="orderList.addr" />
+		</div>
+		<button type="button" ng-click="submitOrder()" class="btn btn-success btn-block">确定下单</button>
+	</form>
+	</div>
+</div>
+

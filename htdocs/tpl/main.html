@@ -1,0 +1,32 @@
+
+
+	<div class="container">
+			<div class="form-group has-feedback">
+				<input type="text" class="form-control" placeholder="可爱的美食家你想吃什么" ng-model="kw" />
+				<span class="glyphicon glyphicon-search form-control-feedback"></span>				
+			</div>
+			
+		<ul class="list-group lianjie">
+			
+			  <li class="list-group-item media" ng-repeat="menue in menuelist track by $index">
+			  	<a href="#/detail/{{menue.did}}">
+			  	<div class="media-left media-middle">
+				      <img class="media-object" ng-src="img/{{menue.img_sm}}" alt="...">			    
+				</div>
+				<div class="media-body">
+				    <h4 >{{menue.name}}</h4>
+				   <p>{{menue.material}}</p>
+				   <hr />
+				   <p class="price">￥{{menue.price}}</p>
+				</div>
+				</a>
+			  </li>
+			
+		 
+		  <button type="button"  class="btn btn-warning btn-block" style="margin-top: 20px;" ng-click="loadmore()" ng-show="hasmore">加载更多</button>
+	      <p ng-hide="hasmore" class="btn btn-warning btn-block"><span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;&nbsp;没有更多的美食了</p>	
+		</ul>
+	</div>
+	
+
+
